@@ -1,6 +1,6 @@
 body{
 	font-family: 'Roboto', sans-serif;
-
+	color: var(--contacts-color)
 }
 
 :root {
@@ -151,15 +151,15 @@ body{
 
 /* --------------------TEAM---------------------------- */
 .team-uptitel{
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 700;
-font-size: 36px;
-line-height: 1.17;
-text-align: center;
-letter-spacing: 0.03em;
-text-align: center;
-color: var(--text-color-N1)
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.17;
+	text-align: center;
+	letter-spacing: 0.03em;
+	text-align: center;
+	color: var(--text-color-N1)
 }
 .team-list{
 	list-style-type: none;
