@@ -121,6 +121,7 @@ body{
 	line-height: 1.875;
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
+	color: var(--text-color-N1);
 }
 .approach-text{
 	font-family: 'Roboto';
@@ -240,6 +241,11 @@ body{
 }
 .portfolio-list-btn{
 	list-style-type: none;
+}
+.portfolio-items-btn :focus,
+.portfolio-items-btn :hover{
+	color: var(--btn-portfolio);
+	background-color: var(--brand-color) ;
 }
 .portfolio-btn{
 	font-family: 'Roboto';
