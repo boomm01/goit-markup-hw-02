@@ -13,13 +13,27 @@ body{
 
   }
 
-/* ----------- HEADER ----------------- */
+.container{
+	width: 1200px;
+	box-sizing: border-box;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin: 0 auto;
 
-
-.header-link :focus,
-.header-link :hover{
-	color: var(--brand-color);
 }
+
+.flex{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+/* ----------- HEADER ----------------- */
+.header{
+	margin-top: 24px;
+	margin-bottom: 25px;
+}
+
 .header-link{
 	font-family: 'Raleway';
 	font-style: normal;
@@ -29,7 +43,14 @@ body{
 	letter-spacing: 0.03em;
 	text-decoration: none;
 	color: var(--text-color-N1);
+	margin-right: 93px;
 }
+
+.header-link :focus,
+.header-link :hover{
+	color: var(--brand-color);
+}
+
 .header-logo{
 	color: var(--brand-color);
 }
@@ -40,6 +61,9 @@ body{
 }
 .header-list{
 	list-style-type: none;
+	display: flex;
+	flex-direction: row;
+	margin-right: 344px;
 }
 
 .header-items {
@@ -51,7 +75,12 @@ body{
 	letter-spacing: 0.02em;
 	color: var(--text-color-N1);
 	text-decoration: none;
+	margin-right: 50px;
 }
+.header-items:last-child{
+	margin-right: 0px;
+}
+
 .header-contacts :hover,
 .header-contacts :focus{
 	color: var(--brand-color);
@@ -64,12 +93,21 @@ body{
 	font-size: 14px;
 	line-height: 1.14;
 	letter-spacing: 0.02em;
+	display: flex;
+	flex-direction: row;
 }
 
 .header-items-contacts {
 	text-decoration: none;
 	color: var(--contacts-color);
+	margin-right: 50px;
 }
+
+.header-items-contacts:last-child{
+	margin-right: 0px;
+}
+
+
 
 /* 
 ------------------HERO------------------ */
@@ -234,8 +272,6 @@ body{
 }
 
 
-/* --------------PORTFOLIO--------------------- */
-
 .portfolio-uptitel{
 	display: none;
 }
@@ -245,8 +281,9 @@ body{
 .portfolio-items-btn :focus,
 .portfolio-items-btn :hover{
 	color: var(--btn-portfolio);
-	background-color: var(--brand-color) ;
+	background-color: var(--brand-color);
 }
+
 .portfolio-btn{
 	font-family: 'Roboto';
 	font-style: normal;
