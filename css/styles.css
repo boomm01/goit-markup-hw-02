@@ -77,8 +77,8 @@ body{
 	text-decoration: none;
 	margin-right: 50px;
 }
-.header-items:last-child{
-	margin-right: 0px;
+.header-items:not(:last-child){
+	margin-right: 50px;
 }
 
 .header-contacts :hover,
@@ -103,8 +103,8 @@ body{
 	margin-right: 50px;
 }
 
-.header-items-contacts:last-child{
-	margin-right: 0px;
+.header-items-contacts:not(:last-child){
+	margin-right: 50px;
 }
 
 
