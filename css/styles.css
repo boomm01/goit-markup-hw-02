@@ -1,6 +1,6 @@
-.body{
+body{
 	font-family: 'Roboto', sans-serif;
-	color: var(--contacts-color)
+	color: var(--contacts-color);
 }
 
 :root {
