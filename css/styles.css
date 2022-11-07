@@ -77,8 +77,7 @@ body{
 }
 
 
-.header-list-link{	
-	font-family: 'Raleway';
+.header-list-link{
 	font-style: normal;
 	font-weight: 500;
 	font-size: 14px;
@@ -135,7 +134,6 @@ body{
 	padding-bottom: 200px;
 }
 .hero-titel{
-	font-family: 'Roboto';
 	font-style: normal;
 	font-weight: 900;
 	font-size: 44px;
@@ -185,7 +183,6 @@ body{
 
 
 .approach-titel{
-	font-family: 'Roboto';
 	font-style: normal;
 	font-weight: 700;
 	font-size: 14px;
@@ -197,7 +194,6 @@ body{
 }
 
 .approach-text{
-	font-family: 'Roboto';
 	font-style: normal;
 	font-weight: 400;
 	font-size: 14px;
@@ -215,7 +211,6 @@ body{
 
 
 .employment-titel{
-	font-family: 'Roboto';
 	font-style: normal;
 	font-weight: 700;
 	font-size: 36px;
@@ -245,7 +240,6 @@ body{
 }
 
 .team-uptitel{
-	font-family: 'Roboto';
 	font-style: normal;
 	font-weight: 700;
 	font-size: 36px;
@@ -278,7 +272,6 @@ body{
 }
 
 .team-titel{
-	font-family: 'Roboto';
 	font-style: normal;
 	font-weight: 500;
 	font-size: 16px;
@@ -292,7 +285,6 @@ body{
 
 
 .team-text{
-	font-family: 'Roboto';
 	font-style: normal;
 	font-weight: 400;
 	font-size: 16px;
@@ -338,7 +330,6 @@ body{
 }
 
 .footer-nav-contacts{
-	font-family: 'Roboto';
 	font-style: normal;
 	font-weight: 400;
 	font-size: 14px;
@@ -372,7 +363,6 @@ body{
 
 
 .portfolio-btn{
-	font-family: 'Roboto';
 	font-style: normal;
 	font-weight: 500;
 	font-size: 16px;
@@ -420,7 +410,6 @@ body{
 }
 
 .portfolio-titel{
-	font-family: 'Roboto';
 	font-style: normal;
 	font-weight: 700;
 	font-size: 18px;
@@ -430,7 +419,6 @@ body{
 	margin-bottom: 4px;
 }
 .portfolio-text{
-	font-family: 'Roboto';
 	font-style: normal;
 	font-weight: 400;
 	font-size: 16px;
