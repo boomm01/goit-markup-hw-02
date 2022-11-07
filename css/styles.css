@@ -1,4 +1,4 @@
-body{
+.body{
 	font-family: 'Roboto', sans-serif;
 	color: var(--contacts-color)
 }
@@ -24,7 +24,6 @@ body{
 
 .flex{
 	display: flex;
-	flex-direction: row;
 	align-items: center;
 }
 
@@ -33,6 +32,13 @@ body{
 	margin-top: 24px;
 	margin-bottom: 25px;
 }
+
+.header-border{
+	border-bottom: 1px solid #ECECEC;
+	padding-bottom: 25px;
+}
+
+/* Чи правильно я задав відступ для рамки і чи так можна робити рамку? */
 
 .header-link{
 	font-family: 'Raleway';
@@ -46,28 +52,32 @@ body{
 	margin-right: 93px;
 }
 
-.header-link :focus,
-.header-link :hover{
+.header-link:focus,
+.header-link:hover{
 	color: var(--brand-color);
 }
 
 .header-logo{
 	color: var(--brand-color);
 }
-
-.header-list :focus,
-.header-list :hover{
-	color: var(--brand-color);
+.header-nav{
+	margin-right: auto;
 }
+
+
 .header-list{
 	list-style-type: none;
 	display: flex;
 	flex-direction: row;
-	margin-right: 344px;
 }
 
-.header-items {
-	font-family: 'Roboto';
+.header-list-link:focus,
+.header-list-link:hover{
+	color: var(--brand-color);
+}
+
+.header-list-link{	
+	font-family: 'Raleway';
 	font-style: normal;
 	font-weight: 500;
 	font-size: 14px;
@@ -77,43 +87,44 @@ body{
 	text-decoration: none;
 	margin-right: 50px;
 }
-.header-items:not(:last-child){
-	margin-right: 50px;
-}
 
-.header-contacts :hover,
-.header-contacts :focus{
-	color: var(--brand-color);
-}
 .header-contacts{
 	list-style-type: none;
+	display: flex;
+}
+
+
+.header-items-contacts {
+	text-decoration: none;
+	color: var(--contacts-color);
+	margin-right: 50px;
 	font-family: 'Roboto';
 	font-style: normal;
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 1.14;
 	letter-spacing: 0.02em;
-	display: flex;
-	flex-direction: row;
 }
 
-.header-items-contacts {
-	text-decoration: none;
-	color: var(--contacts-color);
-	margin-right: 50px;
+.header-items-contacts:hover,
+.header-items-contacts:focus{
+	color: var(--brand-color);
 }
 
-.header-items-contacts:not(:last-child){
-	margin-right: 50px;
-}
 
 
 
 /* 
 ------------------HERO------------------ */
 
+
+
 .hero{
 	background-color: var(--hero-color);
+	min-width: 1600px;
+	min-height: 600px;	
+	margin: 0 auto;
+	padding-top: 200px;
 }
 .hero-titel{
 	font-family: 'Roboto';
@@ -124,9 +135,11 @@ body{
 	color: var(--text-color-N2);
 	text-align: center;
 	text-transform: uppercase;
+	margin: 0 auto 30px auto;   
+	/* Чи можна так вирішити ситуацію? з маржинами шоб відшовхнуути від себе кнопку -----------------------------------------------------------*/
 }
 .hero-btn{
-	font-family: 'Roboto';
+	font-family: inherit;
 	font-style: normal;
 	font-weight: 700;
 	font-size: 16px;
@@ -140,17 +153,40 @@ body{
 	border: 0;
 	border-radius: 4px;
 	cursor: pointer;
+	width: 216px;
+	height: 50px;
+	justify-content: center;
+	margin: 0 auto;
 }
 
 /* 
 -------------------APPROACH---------------------- */
 
+
+.approach{
+	padding-top: 94px;
+}
+
+/* Для того щоб опустити текс як на макеті тут треба використовувати пaдінг, тому що елемент сам себе не може штовхати? тому у мене не буде працювати для pproach-list margin-top:94px? */
+
 .approach-uptitel{
 	display: none;
 }
+
 .approach-items{
 	list-style-type: none;
 }
+
+ .approach-list{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 94px;
+	gap: 30px;
+ }	
+
+
+
+
 .approach-titel{
 	font-family: 'Roboto';
 	font-style: normal;
@@ -160,7 +196,9 @@ body{
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
 	color: var(--text-color-N1);
+	margin-bottom: 10px;
 }
+
 .approach-text{
 	font-family: 'Roboto';
 	font-style: normal;
@@ -183,12 +221,25 @@ body{
 	letter-spacing: 0.03em;
 	text-align: center;
 	color: var(--text-color-N1);
+	margin-bottom: 50px;
 }
 .employment-list{
+	display: flex;
 	list-style-type: none;
+	gap: 30px;
+	margin-bottom: 94px;
 }
 
+
+
 /* --------------------TEAM---------------------------- */
+
+.team{
+	padding-top: 94px;
+	background-color: var(--btn-portfolio);
+	min-width: 1600px;
+}
+
 .team-uptitel{
 	font-family: 'Roboto';
 	font-style: normal;
@@ -198,10 +249,28 @@ body{
 	text-align: center;
 	letter-spacing: 0.03em;
 	text-align: center;
-	color: var(--text-color-N1)
+	color: var(--text-color-N1);
+	margin-bottom: 50px;
+
 }
+
 .team-list{
 	list-style-type: none;
+	display: flex;
+	margin-bottom: 94px;
+	gap: 30px;
+}
+
+.team-items{
+	width: 270px;
+	height: 368px;
+	background: #FFFFFF;
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+	border-radius: 0px 0px 4px 4px;	
+}
+
+.team-img{
+	margin-bottom: 30px;
 }
 
 .team-titel{
@@ -213,7 +282,11 @@ body{
 	text-align: center;
 	letter-spacing: 0.03em;
 	color: var(--text-color-N1);
+	margin-bottom: 10px;
 }
+
+
+
 .team-text{
 	font-family: 'Roboto';
 	font-style: normal;
@@ -229,7 +302,11 @@ body{
 
 .footer{
 	background-color: var(--hero-color);
+	padding-top: 60px;
+	padding-bottom: 60px;
+	min-width: 1600px;
 }
+
 .footer-link{
 	font-family: 'Raleway';
 	font-style: normal;
@@ -239,27 +316,43 @@ body{
 	letter-spacing: 0.03em;
 	text-decoration: none;
 	color: var(--text-color-N2);
+	/* margin-bottom: 20px; */
 }
+
+/* Не працює маржин ботом від логотипу щоб відступити 20рх через це я блоку адреса задав .footer-adress{
+					padding-top: 20px;
+					}  чому так?  */
+
 .footer-logo{
 	color: var(--brand-color);
 }
-.footer-list :hover,
-.footer-list :focus{
+
+
+.footer-adress{
+	padding-top: 20px;
+} 
+
+ /* .footer-adress{
+	margin-bottom: 60px;
+}   */
+
+/* Не працює маржин для секції footer-adress чому не можу зробити нижній відступ? зараз ось наприклад закоментований маржин і працює падінг для футера, але якщо рощкоментувати маржин для списку то буде і то і то працювати  */
+
+.footer-nav-contacts:hover,
+.footer-nav-contacts:focus{
 	color: var(--brand-color);
 }
-.footer-items{
+
+.footer-list-items{
 	list-style-type: none;
+
 }
-.footer-nav-map{
-	font-family: 'Roboto';
-	font-style: normal;
-	font-weight: 400;
-	font-size: 14px;
-	line-height: 1.71;
-	letter-spacing: 0.03em;
-	color: var(--text-color-N2);
-	text-decoration: none;
+
+
+.footer-list-items:not(:last-child){
+	margin-bottom: 9px;
 }
+
 .footer-nav-contacts{
 	font-family: 'Roboto';
 	font-style: normal;
@@ -272,17 +365,27 @@ body{
 }
 
 
+
+
+/* ------------------------------------------PORTFOLIO--------------------------------- */
+
+
+.portfolio{
+	padding-top: 94px;
+}
+
 .portfolio-uptitel{
 	display: none;
 }
+
 .portfolio-list-btn{
 	list-style-type: none;
+	display: flex;
+	gap: 8px;
+	justify-content: center;
+	margin-bottom: 50px;
 }
-.portfolio-items-btn :focus,
-.portfolio-items-btn :hover{
-	color: var(--btn-portfolio);
-	background-color: var(--brand-color);
-}
+
 
 .portfolio-btn{
 	font-family: 'Roboto';
@@ -293,14 +396,41 @@ body{
 	text-align: center;
 	letter-spacing: 0.03em;
 	color: var(--text-color-N1);
+	cursor: pointer;
 	background: var(--btn-portfolio);
 	border-radius: 4px;	
 	border: 0;
-	cursor: pointer;
+	min-width: 125px;
+	height: 38px;
 }
+
+.portfolio-btn:focus,
+.portfolio-btn:hover{
+	color:#FFFFFF;
+	background-color: var(--brand-color);
+}
+
+
 .portfolio-list-about{
 	list-style-type: none;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-bottom: 94px;
+	gap: 30px;
+	
 }
+
+.portfolio-items-img{
+	width: 370px;
+	height: 404px;	
+	background: #FFFFFF;
+	border: 1px solid #EEEEEE;
+	/* margin-bottom: 20px; чому не працює, щоб відштовхнути параграф? довелось задавати padding-top: 20px; для заголовку portfolio-text*/
+}
+
+/* Як мені правильно задати calc для цих списків? */
+
 .portfolio-titel{
 	font-family: 'Roboto';
 	font-style: normal;
@@ -309,6 +439,8 @@ body{
 	line-height: 2;
 	letter-spacing: 0.06em;
 	color: var(--text-color-N1);
+	padding-left: 24px;
+	padding-top: 20px;
 }
 .portfolio-text{
 	font-family: 'Roboto';
@@ -318,5 +450,6 @@ body{
 	line-height: 1.875;
 	letter-spacing: 0.03em;
 	color: var(--contacts-color);
+	padding-left: 24px;
 
 }
